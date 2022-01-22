@@ -1,0 +1,34 @@
+@import 'Config';
+@import 'TextStyles';
+@import 'Utilities';
+@import 'Form';
+@import 'Margin&Padding';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+
+    a {
+        color: $primary-color;
+        text-decoration: none;
+    }
+      
+    ul {
+        list-style: none;
+    }
+      
+    img {
+        width: 100%;
+    }
+}
+
+@import 'Mobile';

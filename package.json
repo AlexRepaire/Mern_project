@@ -1,0 +1,30 @@
+{
+  "name": "mern_devconnector",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "réseau social pour les développeurs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server --ignore client",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Repaire Alexandre",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "express-validator": "^6.14.0",
+    "gravatar": "^1.8.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.6"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

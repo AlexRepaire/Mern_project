@@ -1,0 +1,22 @@
+
+$primary-color: #17a2b8;
+$dark-color: #353b41;
+$light-color: #f5f5f5;
+$danger-color: hsl(354, 70%, 54%);
+$success-color: #28a745;
+$max-width: 1100px;
+
+// Définir text color sur background
+@function set-text-color($color) {
+    @if lightness($color) > 55 {
+        @return #333;
+    } @else {
+        @return rgb(255, 255, 255);
+    }
+}
+
+// Définir background et text color
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}
